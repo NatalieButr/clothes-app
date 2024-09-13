@@ -1,0 +1,28 @@
+.text-field {
+  max-width: 441px;
+  position: relative;
+
+  &__input {
+    border-radius: 2px;
+    border: 1px solid #FFF;
+    height: 44px;
+    color: var(--color-grey);
+    font-family: "Libre Baskerville", sans-serif;
+    font-size: 18px;
+    width: 100%;
+    padding: 0 16px;
+
+    &--icon {
+      padding-left: 69px;
+    }
+  }
+
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 17px;
+    height: 100%;
+  }
+}

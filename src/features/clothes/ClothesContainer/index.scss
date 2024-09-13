@@ -1,0 +1,84 @@
+@import "../../../styles/mixins";
+
+.clothes-container {
+  display: flex;
+  gap: 43px;
+
+  &__panel {
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+
+    @include phone {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+    }
+  }
+
+  &__search {
+    max-width: 534px;
+    width: 100%;
+    display: block;
+    min-width: 280px;
+    @include bigDesktop {
+      display: none;
+    }
+  }
+  &__filter {
+    width: 30%;
+    min-width: 290px;
+    max-width: 460px;
+    height: max-content;
+    display: none;
+    @include desktop {
+      display: block;
+    }
+  }
+
+  &__block {
+    max-width: 1316px;
+    width: 100%;
+
+    @include desktop {
+      width: 80%;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 43px;
+  }
+
+  &__filters {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: "Libre Baskerville Bold", sans-serif;
+
+    cursor: pointer;
+
+    @include desktop {
+      pointer-events: none;
+    }
+  }
+
+  &__dropdown {
+    position: absolute;
+    z-index: 1;
+    right: 30px;
+    margin-top: 10px;
+  }
+
+  &__empty {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

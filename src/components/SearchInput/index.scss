@@ -1,0 +1,27 @@
+.search-input {
+  position: relative;
+  max-width: 534px;
+  width: 100%;
+
+  input {
+    display: flex;
+    align-items: center;
+    height: 52px;
+    border-radius: 8px;
+    background: #F0F0F0;
+    padding: 0 40px 0 36px;
+    width: 100%;
+    font-family: "Libre Baskerville", sans-serif;
+    font-size: 18px;
+  }
+
+  &__icon {
+    width: 24px;
+    position: absolute;
+    right: 14px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}

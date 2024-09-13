@@ -1,0 +1,108 @@
+@import "../../../styles/mixins";
+
+.footer {
+ background: var(--color-dark-blue);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding-top: 44px;
+ color: white;
+
+ &__logo {
+  display: flex;
+  gap: 29px;
+  width: 100%;
+  align-items: center;
+
+  p {
+   font-size: 40px;
+   font-family: "Libre Baskerville Bold", sans-serif;
+   line-height: 50px;
+
+   @include desktop {
+    font-size: 64px;
+    line-height: 79px;
+   }
+
+  }
+ }
+
+
+ &__bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &:before {
+   content: '';
+   background: white;
+   display: block;
+   position: absolute;
+   width: 100%;
+   height: 1px;
+  }
+ }
+
+ &__bottom-content {
+  padding: 35px 0;
+  max-width: 903px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  white-space: nowrap;
+
+  @include desktop {
+   justify-content: space-between;
+   flex-wrap: nowrap;
+   gap: 150px;
+  }
+ }
+
+ &__content {
+  margin: 83px auto 79px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 50px;
+  max-width: 1562px;
+  white-space: nowrap;
+  flex-wrap: wrap;
+
+  @include desktop {
+   justify-content: space-between;
+  }
+
+  h3 {
+   margin-bottom: 19px;
+   font-family: "Libre Baskerville Bold", sans-serif;
+   font-size: 24px;
+   line-height: 30px;
+  }
+
+
+ }
+
+ &__list {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  li {
+   font-size: 18px;
+   line-height: 22px;
+  }
+ }
+
+ &__text {
+  max-width: 441px;
+  display: block;
+  margin-bottom: 16px;
+  white-space: normal;
+ }
+
+ &__socials {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+ }
+}

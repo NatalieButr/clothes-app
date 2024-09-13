@@ -1,0 +1,59 @@
+.dropdown {
+  display: flex;
+  position: relative;
+
+  &__button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: "Libre Baskerville Bold", sans-serif;
+    white-space: nowrap;
+
+    img {
+      transition: all .2s linear;
+    }
+
+    &--open {
+
+      img {
+        transform: rotate(180deg);
+      }
+
+    }
+  }
+
+  &__dropdown-menu {
+    position: absolute;
+    top: 40px;
+    z-index: 2;
+    border-radius: 10px;
+    background: white;
+    display: none;
+    right: 0;
+
+    &--open {
+      display: block;
+
+    }
+  }
+
+  &__list {
+    min-width: 320px;
+    padding: 28px 30px 28px 43px;
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+  }
+
+  &__item {
+    cursor: pointer;
+    font-family: "Libre Baskerville", sans-serif;
+    font-size: 18px;
+
+    &--active, &:hover {
+      font-family: "Libre Baskerville Bold", sans-serif;
+    }
+  }
+}

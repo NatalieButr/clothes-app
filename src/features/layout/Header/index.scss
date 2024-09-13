@@ -1,0 +1,91 @@
+@import "../../../styles/mixins";
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+
+  &__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1820px;
+  }
+
+  &__block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 861px;
+    gap: 40px;
+
+    &:first-child {
+      max-width: 681px;
+    }
+
+    &:last-child {
+      justify-content: flex-end;
+      width: 40%;
+      @include bigDesktop {
+        width: 50%;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &__links {
+    display: none;
+    max-width: 465px;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    gap: 10px;
+
+    @include desktop {
+      display: flex;
+    }
+
+    a {
+      color: var(--color-black);
+
+      &:hover {
+        color: var(--color-dark-blue);
+      }
+    }
+  }
+
+  .search-input {
+    display: none;
+    @include bigDesktop {
+        display: block;
+    }
+  }
+
+  &__row {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+
+    a {
+      height: 29px;
+    }
+  }
+
+  &__profile {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    p {
+      display: none;
+      white-space: nowrap;
+      @include desktop {
+        display: inline;
+      }
+    }
+  }
+}
