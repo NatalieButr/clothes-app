@@ -3,8 +3,9 @@
 
 This project is a frontend web application built with React, Vite, and TypeScript. The project allows users to browse clothing items with sorting and filtering options.
 
-## Project Structure
-src: This is where all the source code lives.
+## Project Structure:
+
+1. src: This is where all the source code lives.
 2. components: Reusable UI components used throughout the app.
 3. pages: Components representing different pages of the application, such as the homepage and product listings.
 4. context: Application-wide state management using React Context API.
