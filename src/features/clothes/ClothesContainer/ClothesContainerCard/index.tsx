@@ -1,10 +1,10 @@
 import { FC } from 'react';
+import { Link } from 'react-router-dom';
 
 import { ClothingItem } from 'types';
 import rate from 'assets/icons/star-icon.svg';
 
 import './index.scss';
-import { Link } from 'react-router-dom';
 
 interface ClothesContainerCardProps {
   item: ClothingItem;

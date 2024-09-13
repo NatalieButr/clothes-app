@@ -1,6 +1,7 @@
 import { filterProducts, sortFunctions } from 'utils';
 import { clothes } from 'data';
 import { ClothingItem, Filters, SortKeys } from 'types';
+import { TIMEOUT } from 'constants';
 
 export const fetchClothes = async ({
   filters,
@@ -20,6 +21,6 @@ export const fetchClothes = async ({
 
     setTimeout(() => {
       resolve(data);
-    }, 1000);
+    }, TIMEOUT);
   });
 };
